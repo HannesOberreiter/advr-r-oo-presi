@@ -216,7 +216,8 @@ class: inverse, animated, fadeInUp
 - Operation Size
 
   - Hobby Beekeeper spend **more** (< Colonies)
-  - No difference between medium and large Operations (20-50, >50 Colonies)
+  - No difference between medium and large Operations <br/>
+  (20-50, >50 Colonies)
   - ~5 Euro / Colony difference (Median)
   
 ???
