@@ -5,8 +5,8 @@ output:
   xaringan::moon_reader:
     chakra: libs/remark-latest.min.js
     css: 
-     - custom-themer.css
-     - animate.min.css
+     - libs/custom-themer.css
+     - libs/animate.min.css
     yolo: false
     seal: false
     lib_dir: libs

@@ -1,4 +1,7 @@
-# Presentatin Repo for my Master Thesis
+# Presentation Repo for my Master Thesis
 
-Using xarinang, xarinang-themer and xarinangBuilder.
+Slides generated with R Markdown, using `xarinang` and modified `xarinang-themer` css.
 
+## Hosting
+
+Github Pages: https://hannesoberreiter.github.io/treatment-expenses-austria-presentation/index.html
