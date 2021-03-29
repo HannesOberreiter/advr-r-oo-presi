@@ -13,6 +13,7 @@ output:
     self_contained: true
     nature:
       highlightStyle: github
+      highlightSpans: true
       highlightLines: true
       countIncrementalSlides: false
 ---
@@ -24,48 +25,36 @@ class: left, middle
 
 Institut of Biology, University of Graz
 
-.footnote[version: 2021-02-2]
+.footnote[version: 2021-03-12]
 
 ```{r setup, include=FALSE, warnings=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
 ???
-- welcome
 - master thesis gap between ecological context and economics
-- beekeeper myself
+- based on the yearly colony loss survey
 
 ---
-class: middle, inverse, animated, fadeInUp
+class: middle, inverse
 
 ### The Financial Burden to Fight *Varroa Destructor*
 
-### Analysis of varroacide expenses and honey bee colony winter mortality on operation level in Austria
+```html
+Question:
+* Estimated treatment expenses per colony without labor costs?
+```
+
 ![](./img/drawing3.png)
 
 ???
-- introduced pest more or less world wide a common problem for beekeepers
+- Analysis of varroacide expenses and honey bee colony winter mortality on operation level in Austria
 - mostly exploratory study on a new survey question 
+- "how much money spend on varroa treatments / colony, without labor work"
 - treatment methods cost and efficiency differences 
 
 ---
-class: center, middle, animated, fadeInUp
-
-### History of Winter Colony Losses in Austria
-
-.center[![title](./img/years-losses.png)]
-
-.center[Red = Running Average + SD, Blue = Median, TN = Participants, VÖ = Colonies]
-.center[Source: 2020 Zukunft Biene 2 ]
-
-???
-- background info
-- the yearly colony loss survey - carried out since winter 2007/08
-- done by Crailsheim and Brodschneider
-- loss rates not the same for each following year
-
----
-class: inverse, animated, fadeInUp
+class: inverse
 ## Index
 .left-column[
 ### 1. DS
@@ -76,23 +65,20 @@ class: inverse, animated, fadeInUp
 
 1. Quantitative Numbers
 
-2. Participants geographical Distribution
+2. Central Tendencies of Survey Expenses
 
 3. Distribution of Cohorts
 
 4. Estimate of Expenses (Input Validation)
-
-5. Central Tendencies of Survey Expenses
 
 ]
 
 ???
 - biggest part in surveys is input validation
 - DS is the main point of the study as in my opinion it is not fair game to test a hypothesis on data you explore
-- we will now walk through 5 points I picked out, which may be interesting
 
 ---
-class: animated, fadeInUp
+class: animated
 ### 1 DS
 #### 1.1 Quantitative Numbers
 
@@ -132,17 +118,18 @@ class: animated, fadeInUp
 - not all had access to the question (paper, newspaper shorter questionnaire)
 
 ---
-class: animated, fadeInUp
+class: animated, 
 ### 1 DS
-#### 1.2 Participants geographical Distribution
+#### 1.2 Central Tendencies of Survey Expenses
 
-![](./img/map.png)
+![](./img/distr-year.png)
 
 ???
-- distribution of main wintering apiary shows good coverage over all of Austria
+- two years are similar
+- most participants did answer in full numbers (shape of violin plot)
 
 ---
-class: animated, fadeInUp
+class: animated
 ### 1 DS
 #### 1.3 Distribution of Cohorts
 
@@ -156,7 +143,7 @@ class: animated, fadeInUp
 - both years strikingly similar ? mostly same participants?
 
 ---
-class: animated, fadeInUp
+class: animated, 
 ### 1 DS
 #### 1.4 Estimate of Expenses (Input Validation)
 
@@ -171,20 +158,8 @@ class: animated, fadeInUp
 - positive underestimated for formic acid short term and long term
 - info: log2 +1 is double of original, -1 half of original 
 
-
 ---
-class: animated, fadeInUp
-### 1 DS
-#### 1.5 Central Tendencies of Survey Expenses
-
-![](./img/distr-year.png)
-
-???
-- two years are similar
-- most participants did answer in full numbers (shape of violin plot)
-
----
-class: inverse, animated, fadeInUp
+class: inverse
 ## Index
 
 .left-column[
@@ -256,7 +231,7 @@ class: inverse, animated, fadeInUp
 
 
 ---
-class: animated, fadeInUp
+class: animated, 
 ### 2 EDA
 #### 2.2 Extrapolation of Total Expenses
 
@@ -271,7 +246,8 @@ class: animated, fadeInUp
 
 
 ---
-class: inverse, animated, fadeInUp
+name: mylastslide
+class: inverse
 ## Index
 
 .left-column[
@@ -296,4 +272,33 @@ class: inverse, animated, fadeInUp
 - I also will add the survey from previous winter
 - set loss rate and cost into context
 - thinking about a decision tree for lower cost and higher cost
+
+---
+
+# Apendix
+
+---
+class: center, middle
+
+## History of Winter Colony Losses in Austria
+
+.center[![title](./img/years-losses.png)]
+
+.center[Red = Running Average + SD, Blue = Median, TN = Participants, VÖ = Colonies]
+.center[Source: 2020 Zukunft Biene 2 ]
+
+???
+- background info
+- the yearly colony loss survey - carried out since winter 2007/08
+- done by Crailsheim and Brodschneider
+- loss rates not the same for each following year
+
+---
+class: animated
+## Participants geographical Distribution
+
+![](./img/map.png)
+
+???
+- distribution of main wintering apiary shows good coverage over all of Austria
 
