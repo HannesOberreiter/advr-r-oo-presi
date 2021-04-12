@@ -17,41 +17,71 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+class: inverse, middle
+
+![](./img/drawing3.png)
+
+```{r cache=FALSE, load_refs, include=FALSE}
+# library(RefManageR)
+# library(here)
+# BibOptions(
+#   style = "text",
+#   first.inits = T,
+#   max.names = 2
+# )
+# myBib <- ReadBib("ref.bib")
+```
+
+.footnote[Presentation: Hannes Oberreiter, version: 2021-04-12]
+
+---
 class: left, middle
 
-# Austrian Beekeeper Citizen Science Survey <br/> [work in progress]
+## Beekeeper Crowdsourcing Data
+### Analysis of varroacide expenses and honey bee colony winter mortality on operation level in Austria
+
 
 **Hannes Oberreiter** 
 
 Institute of Biology, University of Graz
-
-.footnote[version: 2021-04-02]
 
 ```{r setup, include=FALSE, warnings=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
 ???
-- master thesis gap between ecological context and economics
-- based on the yearly colony loss survey
+- Comparing Expenses and Efficiency of Treatment Methods against the introduced Varroa Mite.
+- work in progress
 
 ---
 class: middle, inverse
 
-### The Financial Burden to Fight *Varroa Destructor*
+--
+### Why?
+
+- Imported aggressor *Varroa destructor*
+  - High varroa mite infestation ~ greatest potential to raise winter colony losses (Morawetz, et al. 2019)
+- Varroa control methods
+  - Differ in effect and usage distribution (Oberreiter and Brodschneider, 2020)
+- Novel descriptive analysis of treatment expenses
+
+???
+- Varroa seems to be main driver of colony losses over winter
+- Method vary in their effectiveness
+--
+
+### How?
+
+- Cooperation with the yearly colony loss survey
+- Crowd sourced data of three winters
 
 ```html
 Question:
 * Estimated treatment expenses per colony without labor costs?
 ```
-
-![](./img/drawing3.png)
-
 ???
-- Analysis of varroacide expenses and honey bee colony winter mortality on operation level in Austria
-- mostly exploratory study on a new survey question 
-- "how much money spend on varroa treatments / colony, without labor work"
-- treatment methods cost and efficiency differences 
+- part of the yearly survey
+- one new questions
 
 ---
 class: inverse
@@ -259,18 +289,26 @@ class: inverse
 ]
 .right-column[
 
-### Analysis in progress
+### Summary
+
+- First investigation of varroa treatment related costs
+- Novel description of the economics behind the mite agent sector
+
+#### Outlook:
 
 - Survey 2020/21
-- Methods to Compare Loss Rate ~ Cost
-- Decision Tree Generation
+- Cost-benefit analysis including winter loss rate of honeybee colonies
+- (Decision Tree Generation)
 
 ]
 
 ???
+- this analysis has not done before
+- already shows the financial impact of imported aggressor
+
 - the master thesis is still in progress
 - I also will add the survey from previous winter
-- set loss rate and cost into context
+- with the analysis, we may show a possible selection criteria for beekeepers 
 - thinking about a decision tree for lower cost and higher cost
 
 ---
