@@ -50,13 +50,12 @@ options(htmltools.dir.version = FALSE)
 ```
 
 ???
-- Comparing Expenses and Efficiency of Treatment Methods against the introduced Varroa Mite.
+- comparing Expenses and Efficiency of Treatment Methods against the introduced Varroa mite.
 - work in progress
 
 ---
 class: middle, inverse
 
---
 ### Why?
 
 - Imported aggressor *Varroa destructor*
@@ -66,7 +65,7 @@ class: middle, inverse
 - Novel descriptive analysis of treatment expenses
 
 ???
-- Varroa seems to be main driver of colony losses over winter
+- Varroa main driver of colony losses over winter
 - Method vary in their effectiveness
 --
 
@@ -217,7 +216,6 @@ class: inverse
 ### 2 EDA
 #### 2.1 Single Factor
 
---
 - Operation Size
 
   - Hobby Beekeeper spend **more** (< Colonies)
@@ -226,7 +224,7 @@ class: inverse
   - ~5 Euro / Colony difference (Median)
   
 ???
-- bigger operation spend less on average less euros per colony
+- bigger operation spend on average less euros per colony
 - no real difference above 21 colonies
 - effect size is low
 --
