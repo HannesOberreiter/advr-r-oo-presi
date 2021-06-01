@@ -1,4 +1,4 @@
-# Presentation Repo for my Master Thesis
+# Advanced R Presentation
 
 Slides generated with R Markdown, using `xarinang` and modified `xarinang-themer` css.
 
@@ -7,7 +7,3 @@ Slides generated with R Markdown, using `xarinang` and modified `xarinang-themer
 ```r
 xaringan::decktape("index.html", "index.pdf")
 ```
-
-## Hosting
-
-Github Pages: https://hannesoberreiter.github.io/treatment-expenses-austria-presentation/index.html
