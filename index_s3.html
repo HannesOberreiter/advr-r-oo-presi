@@ -20,12 +20,6 @@ class: center, middle, inverse, title-slide
 
 ---
 
-
-class: left, middle
-
-
-
----
 class: left, middle
 
 # S3
@@ -71,7 +65,7 @@ class:left, top
 
 
 ```r
-sloop::ftype(print)
+sloop::ftype(str)
 ```
 
 ```
@@ -81,7 +75,6 @@ sloop::ftype(print)
 ```r
 time &lt;- strptime(c(&quot;2017-01-01&quot;), &quot;%Y-%m-%d&quot;)
 
-# Printing our Factor
 str(time)
 ```
 
@@ -154,14 +147,14 @@ class(animal)
 ```
 
 ```r
-inherits(animal, &quot;dog&quot;)
+inherits(animal, &quot;animal&quot;)
 ```
 
 ```
-## [1] FALSE
+## [1] TRUE
 ```
 
-We could also change classes of base objects crazy arent?
+We could also change classes of base objects crazy aren&#39;t?
 
 
 ```r
@@ -195,7 +188,6 @@ class:left, middle
   
 ---
 class:left, top
-
 ### Constructor
 
 
@@ -209,21 +201,15 @@ new_Taxa &lt;- function(taxon = character(), kingdom = &quot;Animalia&quot;) {
     kingdom = kingdom
   )
 }
-
-str(new_Taxa(&quot;Dog&quot;))
+new_Taxa(&quot;Dog&quot;)
 ```
 
 ```
-##  &#39;Taxa&#39; chr &quot;Dog&quot;
-##  - attr(*, &quot;kingdom&quot;)= chr &quot;Animalia&quot;
-```
-
-```r
-attr(new_Taxa(&quot;Dog&quot;), &quot;class&quot;)
-```
-
-```
+## [1] &quot;Dog&quot;
+## attr(,&quot;class&quot;)
 ## [1] &quot;Taxa&quot;
+## attr(,&quot;kingdom&quot;)
+## [1] &quot;Animalia&quot;
 ```
 
 &gt; The constructor is a developer function: it will be called in many places, by an experienced user. That means it’s OK to trade a little safety in return for performance, and you should avoid potentially time-consuming checks in the constructor.
@@ -239,7 +225,6 @@ class:left, top
 ```r
 validate_Taxa &lt;- function(x) {
   values &lt;- unclass(x)
-  
   if (length(values) != length(unique(values))) {
     warning(
       &quot;All Taxa must be unique.&quot;,
@@ -247,7 +232,6 @@ validate_Taxa &lt;- function(x) {
     )
     return(FALSE)
   }
-  
   x
 }
 
@@ -413,20 +397,19 @@ class: left, top
 
 
 ```r
-mean
+print
 ```
 
 ```
 ## function (x, ...) 
-## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7ff66c4189b8&gt;
+## UseMethod(&quot;print&quot;)
+## &lt;bytecode: 0x7f9e858eaa68&gt;
 ## &lt;environment: namespace:base&gt;
 ```
 
 
 ```r
-x &lt;- Sys.Date()
-sloop::s3_dispatch(print(x))
+sloop::s3_dispatch(print(Sys.Date()))
 ```
 
 ```

@@ -53,7 +53,7 @@ Generic is a middleman with interface and looks for the correct method for speci
 class:left, top
 
 ```{r}
-sloop::ftype(print)
+sloop::ftype(str)
 time <- strptime(c("2017-01-01"), "%Y-%m-%d")
 
 str(time)
@@ -125,8 +125,7 @@ new_Taxa <- function(taxon = character(), kingdom = "Animalia") {
     kingdom = kingdom
   )
 }
-str(new_Taxa("Dog"))
-attr(new_Taxa("Dog"), "class")
+new_Taxa("Dog")
 ```
 
 > The constructor is a developer function: it will be called in many places, by an experienced user. That means it’s OK to trade a little safety in return for performance, and you should avoid potentially time-consuming checks in the constructor.
@@ -141,7 +140,6 @@ class:left, top
 ```{r}
 validate_Taxa <- function(x) {
   values <- unclass(x)
-  
   if (length(values) != length(unique(values))) {
     warning(
       "All Taxa must be unique.",
@@ -149,7 +147,6 @@ validate_Taxa <- function(x) {
     )
     return(FALSE)
   }
-  
   x
 }
 
@@ -253,12 +250,11 @@ class: left, top
 > S3 generic is to perform method dispatch, i.e. find the specific implementation for a class
 
 ```{r}
-mean
+print
 ```
 
 ```{r}
-x <- Sys.Date()
-sloop::s3_dispatch(print(x))
+sloop::s3_dispatch(print(Sys.Date()))
 ```
 
 ---

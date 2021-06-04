@@ -162,7 +162,7 @@ class: left, top
 --
 
 - **encapsulation**
-  - user don&#39;t worry about the object details, they are hidden from him
+  - user don&#39;t worry about the object details, they are hidden
 --
 
 - **class**
@@ -191,43 +191,7 @@ class: left, top
 Example:
 
 - ordered factor *inherits* from a regular factor
-- generalised linear model *inherits* from a linear model.
-
----
-class: left, top
-
-## Inheritance
-
-Rough example without classes:
-
-
-```r
-mean(runif(10))
-```
-
-```
-## [1] 0.7029839
-```
-
-```r
-extendedMean &lt;- function(x) {
-  # inherits everything from mean
-  x &lt;- mean(x)
-  # adds new method
-  print(glue::glue(&quot;Calculated a mean of {round(x, 2)}! Hurray!&quot;))
-  return(x)
-}
-
-extendedMean(runif(10))
-```
-
-```
-## Calculated a mean of 0.57! Hurray!
-```
-
-```
-## [1] 0.5696663
-```
+- generalized linear model *inherits* from a linear model.
 
 ---
 class: left, middle
@@ -237,7 +201,7 @@ class: left, middle
 
 ```r
 library(sloop)
-otype(1:10)
+sloop::otype(1:10)
 ```
 
 ```
@@ -245,7 +209,7 @@ otype(1:10)
 ```
 
 ```r
-otype(mtcars)
+sloop::otype(mtcars)
 ```
 
 ```
@@ -254,51 +218,11 @@ otype(mtcars)
 
 ```r
 mle_obj &lt;- stats4::mle(function(x = 1) (x - 2) ^ 2)
-otype(mle_obj)
+sloop::otype(mle_obj)
 ```
 
 ```
 ## [1] &quot;S4&quot;
-```
-
----
-class: left, middle
-
-## sloop
-
-
-```r
-library(sloop)
-sloop::otype(mean(1, 3))
-```
-
-```
-## [1] &quot;base&quot;
-```
-
-```r
-# Base Object != no class attribute
-attributes(mean(1, 3))$class
-```
-
-```
-## NULL
-```
-
-```r
-sloop::otype(trees)
-```
-
-```
-## [1] &quot;S3&quot;
-```
-
-```r
-attributes(trees)$class
-```
-
-```
-## [1] &quot;data.frame&quot;
 ```
 
 ---
@@ -326,7 +250,7 @@ attributes(1337L)$class
 ```
 
 ```r
-# class can be missleading with base objects
+# class can be misleading with base objects
 class(1337L)
 ```
 
@@ -420,14 +344,6 @@ typeof(mle_obj)
 ## [1] &quot;S4&quot;
 ```
 
-```r
-sloop::otype(mle_obj)
-```
-
-```
-## [1] &quot;S4&quot;
-```
-
 ---
 class: left, top
 
@@ -444,8 +360,8 @@ getGeneric(&quot;+&quot;)
 ## 
 ## function (e1, e2) 
 ## standardGeneric(&quot;+&quot;, .Primitive(&quot;+&quot;))
-## &lt;bytecode: 0x7fe85db32800&gt;
-## &lt;environment: 0x7fe85db2abf0&gt;
+## &lt;bytecode: 0x7fc522259800&gt;
+## &lt;environment: 0x7fc522251bf0&gt;
 ## Methods may be defined for arguments: e1, e2
 ## Use  showMethods(&quot;+&quot;)  for currently available ones.
 ```

@@ -127,7 +127,7 @@ class: left, top
 --
 
 - **encapsulation**
-  - user don't worry about the object details, they are hidden from him
+  - user don't worry about the object details, they are hidden
 --
 
 - **class**
@@ -189,7 +189,7 @@ Base Objects do not have a class attribute to access
 
 ```{r}
 attributes(1337L)$class
-# class can be missleading with base objects
+# class can be misleading with base objects
 class(1337L)
 # we can show class vector with sloop
 # returns the implicit class that the S3 and S4 systems will use
@@ -225,7 +225,6 @@ typeof(globalenv())
 # S4 Chapter 15 (don't inherit from any base type)
 mle_obj <- stats4::mle(function(x = 1) (x - 2)^2)
 typeof(mle_obj)
-sloop::otype(mle_obj)
 ```
 
 ---
