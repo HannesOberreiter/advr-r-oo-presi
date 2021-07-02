@@ -25,7 +25,7 @@ class: left, top
 
 ```{r setup, include=FALSE, warnings=FALSE}
 options(htmltools.dir.version = FALSE)
-options(crayon.enabled = TRUE)
+options(crayon.enabled = FALSE)
 library(tidyverse)
 library(rlang)
 library(lobstr)
@@ -259,6 +259,15 @@ call2("mean", x = expr(x), na.rm = TRUE)
 
 > Using call2() to create complex expressions is a bit clunky. You’ll learn another technique in Chapter 19.
 
+
+---
+class: center, middle
+
+
+```{r, echo=FALSE, out.width="", fig.cap="", fig.align="center"}
+knitr::include_graphics("./img/parse.jpg")
+```
+
 ---
 class: left, top
 
@@ -292,8 +301,15 @@ expr_text(z)
 ```
 
 -  does happen when we print the expression automatically
+
 ```{r}
 print(z)
 ```
 
+---
+class: center, middle
+
+```{r, echo=FALSE, out.width="", fig.cap="", fig.align="center"}
+knitr::include_graphics("./img/eval_evil.jpeg")
+```
 
