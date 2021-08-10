@@ -29,8 +29,8 @@ library(tidyverse)
 ### Why care about C++?
 
 - **Performance**
-- Loops: Iternations depend on previous ones
-- Millions of Recusive Hell'ish calls (Mandelbrot?)
+- Loops: Iterations depend on previous ones
+- Millions of Recursive Hell'ish calls (Mandelbrot?)
 - Problems that require advanced data structures and algorithms that R doesn’t provide.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap="", fig.align="center"}
