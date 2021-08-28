@@ -13,4 +13,4 @@ xaringan::decktape("index.html", "index.pdf")
 - <https://hannesoberreiter.github.io/advr-r-oo-presi/index_basic.html>
 - <https://hannesoberreiter.github.io/advr-r-oo-presi/index_s3.html>
 - <https://hannesoberreiter.github.io/advr-r-oo-presi/index_expression.html>
-
+- <https://hannesoberreiter.github.io/advr-r-oo-presi/index_C.html>

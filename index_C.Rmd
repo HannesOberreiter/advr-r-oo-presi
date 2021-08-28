@@ -31,7 +31,7 @@ library(tidyverse)
 - **Performance**
 - Loops: Iterations depend on previous ones
 - Millions of Recursive Hell'ish calls (Mandelbrot?)
-- Problems that require advanced data structures and algorithms that R doesn’t provide.
+- Problems that require advanced data structures and algorithms that R doesn’t provide
 
 ```{r, echo=FALSE, out.width="50%", fig.cap="", fig.align="center"}
 knitr::include_graphics("./img/Verhulst-Mandelbrot-Bifurcation.jpg")
@@ -162,7 +162,7 @@ The C++ function is about `r res[["times"]]` times faster, ~`r res[["diff"]]`, b
 class: left, top
 ### stand-alone C++
 
-- source C++ fliles with `sourceCpp()`
+- source C++ files with `sourceCpp()`
 - file extension `.cpp`
 - prefix functions for export to R with `// [[Rcpp::export]]`
 - you can embed R code: `/*** R \n # This is R Code \n */`
@@ -265,10 +265,10 @@ class: left, top
 ```{r}
 rowSumC(
   tibble(
-    a = c(1,2,3),
-    b = c(3,2,1)
+    a = c(1,3,4),
+    b = c(2,4,6)
   )
-)
+) %>%  glimpse()
 ```
 
 ---
@@ -404,12 +404,8 @@ class: top, left
 
 **Help**: `vignette("Rcpp-package")`
 
-> This document provides a short overview of how to use Rcpp (Eddelbuettel et al., 2021a; Eddelbuettel and François, 2011; Eddelbuettel,
-2013) when writing an R package. It shows how usage of the function
-Rcpp.package.skeleton which creates a complete and self-sufficient
-example package using Rcpp. All components of the directory tree created by Rcpp.package.skeleton are discussed in detail. This document
-thereby complements the Writing R Extensions manual (R Core Team,
-2018) which is the authoritative source on how to extend R in general.
+> This document provides a short overview of how to use Rcpp (Eddelbuettel et al., 2021a; Eddelbuettel and François, 2011; Eddelbuettel, 2013) when writing an R package. It shows how usage of the function
+Rcpp.package.skeleton which creates a complete and self-sufficient example package using Rcpp. All components of the directory tree created by Rcpp.package.skeleton are discussed in detail. This document thereby complements the Writing R Extensions manual (R Core Team, 2018) which is the authoritative source on how to extend R in general.
 
 ---
 class: top, left
